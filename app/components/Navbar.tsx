@@ -1,11 +1,9 @@
+import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-  return (
-    <div>
-      <h1 className="text-red-500">Navbar Layout</h1>
-    </div>
-  );
+  return <nav className="bg-white p-3 shadow-lg">TODO: NAVBAR</nav>;
 };
 
 export default Navbar;
