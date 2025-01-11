@@ -24,7 +24,7 @@ const AboutPage = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl font-bold text-gray-900 leading-snug">
             Full Stack Developer, <br /> Graduated <br /> in Computer Science,{" "}
-            <br /> part-time Guitarist.
+            <br /> Lorem, ipsum dolor..
           </h1>
           <p className="text-lg text-gray-700 mt-6">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
