@@ -1,17 +1,28 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white p-6 shadow-lg">
+    <nav className="bg-white text-black  p-6 shadow-lg">
+      {" "}
+      {/* //dark:bg-black dark:text-white */}
       <ul className="list-none flex justify-between items-center md:mx-60">
         <li className="flex space-x-4">
-          <ul>Sahil</ul>
+          <ul className="text-xl md:text-3xl font-[poppins]">
+            <Link href="/">Sahil.</Link>
+          </ul>
           <ul>Toggle</ul>
         </li>
         <li className="flex space-x-6">
-          <ul>About</ul>
-          <ul>Resume</ul>
-          <ul>Fun</ul>
+          <ul className="font-[poppins]">
+            <Link href="/about">About</Link>
+          </ul>
+          <ul className="font-[poppins]">
+            <Link href="/resume">Resume</Link>
+          </ul>
+          <ul className="font-[poppins]">
+            <Link href="/fun">Fun</Link>
+          </ul>
         </li>
       </ul>
     </nav>
