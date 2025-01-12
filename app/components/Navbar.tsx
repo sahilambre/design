@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white text-black  p-6 shadow-lg">
+    <nav className="bg-white text-black  p-6 shadow-lg dark:bg-black dark:text-white">
       {" "}
       {/* //dark:bg-black dark:text-white */}
       <ul className="list-none flex justify-between items-center md:mx-60">
@@ -11,7 +12,9 @@ const Navbar = () => {
           <ul className="text-xl md:text-3xl font-[poppins]">
             <Link href="/">Sahil.</Link>
           </ul>
-          <ul>Toggle</ul>
+          <ul>
+            <ThemeToggle />{" "}
+          </ul>
         </li>
         <li className="flex space-x-6">
           <ul className="font-[poppins]">
