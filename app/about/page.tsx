@@ -1,16 +1,23 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import aboutImage from "@/public/aboutImage.webp";
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoLogoGithub } from "react-icons/io";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const AboutPage = () => {
   return (
     <div className="bg-beige text-black dark:bg-black px-4 md:px-16 lg:px-24 xl:px-80 py-16">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         {/* Left Section - Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <motion.div
+          className="w-full md:w-1/2 flex justify-center"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Image
             src={aboutImage}
             alt="About Image"
@@ -18,10 +25,15 @@ const AboutPage = () => {
             height={400}
             className="rounded-2xl shadow-lg"
           />
-        </div>
+        </motion.div>
 
         {/* Right Section - Info */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center">
+        <motion.div
+          className="w-full md:w-1/2 flex flex-col justify-center"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h1 className="text-4xl font-bold text-black dark:text-white leading-snug">
             Full Stack Developer, <br /> Graduated <br /> in Computer Science,{" "}
             <br /> Lorem, ipsum dolor..
@@ -44,11 +56,16 @@ const AboutPage = () => {
               quisquam?
             </span>
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="flex flex-col lg:flex-row gap-16 py-12 pl-0 md:pl-20 lg:pl-20">
         {/* Skills & Interests Column */}
-        <div className="w-full lg:w-1/3">
+        <motion.div
+          className="w-full lg:w-1/3"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
             Skills
           </h2>
@@ -68,10 +85,15 @@ const AboutPage = () => {
             quidem eos consequatur rem dolore suscipit sed perferendis inventore
             eligendi unde.
           </p>
-        </div>
+        </motion.div>
 
         {/* Experience Column */}
-        <div className="w-full lg:w-1/3">
+        <motion.div
+          className="w-full lg:w-1/3"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
             Experience
           </h2>
@@ -115,10 +137,15 @@ const AboutPage = () => {
               <IoLogoGithub />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* Education Column */}
-        <div className="w-full lg:w-1/3">
+        <motion.div
+          className="w-full lg:w-1/3"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="text-2xl font-bold text-black dark:text-white mb-4">
             Education
           </h2>
@@ -140,7 +167,7 @@ const AboutPage = () => {
               Resume
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

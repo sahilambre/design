@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
+// import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import React from "react";
 
 const ThemeToggle = () => {
@@ -10,7 +12,7 @@ const ThemeToggle = () => {
   useEffect(() => {
     const theme = localStorage.getItem("theme");
     if (theme === "dark") {
-      setDarkMode(false);
+      setDarkMode(true);
     }
   }, []);
 
@@ -26,14 +28,26 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className="relative w-16 h-8 flex items-center dark:bg-white bg-black cursor-pointer rounded-full p-1"
+      className="relative w-16 h-8 flex items-center bg-black dark:bg-white cursor-pointer rounded-full p-1"
       onClick={() => setDarkMode(!darkMode)}
     >
+      {/* Moon Icon */}
       <FaMoon className="text-white" size={18} />
-      <div
-        className="absolute bg-white dark:bg-black w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ease-in-out"
+
+      {/* Toggle Button with Animation */}
+      <motion.div
+        className="absolute bg-white dark:bg-black w-6 h-6 rounded-full shadow-md"
+        layout
+        transition={{
+          type: "spring",
+          stiffness: 500,
+          damping: 30,
+        }}
+        initial={false}
         style={darkMode ? { left: "2px" } : { right: "2px" }}
-      ></div>
+      ></motion.div>
+
+      {/* Sun Icon */}
       <BsSunFill className="ml-auto text-yellow-400" size={22} />
     </div>
   );
