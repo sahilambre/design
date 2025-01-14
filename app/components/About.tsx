@@ -8,7 +8,14 @@ const About = () => {
       <div className="flex flex-col lg:flex-row h-[80vh]">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 bg-gray-400 flex justify-center items-center p-4">
-          <Image src={aboutImage} alt="aboutImage" width={600} height={600} />
+          <Image
+            src={aboutImage}
+            alt="aboutImage"
+            width={600}
+            height={500}
+            objectFit="cover"
+            priority
+          />
         </div>
 
         {/* Text Section */}
