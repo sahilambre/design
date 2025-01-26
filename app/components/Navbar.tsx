@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white text-black p-6 shadow-lg dark:shadow-white-lg dark:bg-black dark:text-white">
+    <nav className="bg-white text-black p-6 shadow-lg dark:shadow-lg dark:bg-black dark:text-white">
       <ul className="list-none flex justify-between items-center md:mx-60">
         {/* Left Section */}
         <li className="flex space-x-4">
