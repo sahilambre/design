@@ -1,14 +1,14 @@
 "use client";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Test from "./components/Test";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
-      <Test />
+      <Skills />
     </>
   );
 }
