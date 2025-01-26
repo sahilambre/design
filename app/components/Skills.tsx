@@ -1,16 +1,67 @@
 import React from "react";
+import { IconCloud } from "./ui/IconCloud";
+
+const slugs = [
+  // "visualstudiocode", todo
+  "typescript",
+  "javascript",
+  // "java",todo
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  // "amazonaws", TODO: add aws
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "figma",
+  "mongodb",
+];
 
 const Skills = () => {
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
   return (
-    <div className="container flex flex-col md:py-16 md:flex-row mx-auto px-4 md:px-16 lg:px-24 xl:px-80 gap-4">
-      <div className="w-full md:w-1/2">
-        {/* Skillset animation cloud Component */}
-        Skillset animation cloud Component
-      </div>
-      <div className="w-full md:w-1/2">
-        {/* Text My Skill set */}
-        Text My Skill set <br />
-        Skilled in services, in button component
+    <div className="text-black bg-white dark:bg-black dark:text-white">
+      <div className="container flex flex-col py-4 md:py-16 md:flex-row mx-auto px-4 md:px-16 lg:px-24 xl:px-80 gap-8 ">
+        <div className="w-full md:w-1/2">
+          {/* Skillset animation cloud Component */}
+          <div className="relative flex size-full max-w-lg items-between justify-center overflow-hidden rounded-lg border bg-white">
+            <IconCloud images={images} />
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
+          <h2 className="text-4xl">I am skilled in</h2>
+          <br />
+          <div className="flex flex-wrap justify-center">
+            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black">
+              TODO todo
+            </button>
+            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black">
+              Testing
+            </button>
+            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black">
+              Wireframing
+            </button>
+            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black">
+              Collaboration
+            </button>
+            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black">
+              Prototyping
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
