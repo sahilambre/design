@@ -1,5 +1,6 @@
 import React from "react";
 import { IconCloud } from "./ui/IconCloud";
+import { ShimmerButton } from "./ui/ShimmerButton";
 
 const slugs = [
   // "visualstudiocode", todo
@@ -63,6 +64,11 @@ const Skills = () => {
             <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
               Prototyping
             </button>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Shimmer Button
+              </span>
+            </ShimmerButton>
           </div>
         </div>
       </div>
