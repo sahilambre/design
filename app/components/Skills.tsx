@@ -45,28 +45,35 @@ const Skills = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
           <h2 className="text-4xl">i am skilled in.</h2>
           <br />
-          <div className="flex flex-wrap justify-center">
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Backend
-            </button>
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Frontend
-            </button>
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Testing
-            </button>
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Wireframing
-            </button>
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Collaboration
-            </button>
-            <button className="border border-black p-3 rounded-full my-1 mr-1 bg-black text-white dark:bg-white dark:text-black font-[poppins]">
-              Prototyping
-            </button>
+          <div className="flex flex-wrap justify-center gap-2">
             <ShimmerButton className="shadow-2xl">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Shimmer Button
+                Frontend
+              </span>
+            </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Backend
+              </span>
+            </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Testing
+              </span>
+            </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Collaboration
+              </span>
+            </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Wireframing
+              </span>
+            </ShimmerButton>
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Prototyping
               </span>
             </ShimmerButton>
           </div>
