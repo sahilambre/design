@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
+import { FaCircle } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -24,6 +25,17 @@ const Hero = () => {
             >
               Software Developer.
             </motion.h1>
+            <motion.h4
+              className="text-center text-black dark:text-white  mt-8 font-[source-serif-pro] leading-relaxed"
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+            >
+              <span className="font-bold">Open to </span>new Job offers&nbsp;{" "}
+              <span className="inline-flex items-center ">
+                <FaCircle className="text-green-500 text-sm pt-1" />
+              </span>
+            </motion.h4>
           </div>
         </div>
       </div>

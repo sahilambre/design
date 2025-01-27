@@ -27,6 +27,8 @@ const slugs = [
   "gitlab",
   "figma",
   "mongodb",
+  "langChain",
+  "redux",
 ];
 
 const Skills = () => {
