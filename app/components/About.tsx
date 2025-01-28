@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import aboutImage from "@/public/iwritecode.webp";
-import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -24,10 +23,11 @@ const About = () => {
           <p className="text-center text-3xl px-12 font-medium font-[source-serif-pro]">
             Welcome to my corner of the web! <br />
             <span className="font-[source-serif-pro] text-2xl">
-              I'm a curious individual passionate about exploring technology,
-              trends, and intriguing conversations. This site reflects my
-              journey, showcasing insights and ideas. I'm excited to share my
-              thoughts and connect with others who share similar interests.
+              I&apos;m a curious individual passionate about exploring
+              technology, trends, and intriguing conversations. This site
+              reflects my journey, showcasing insights and ideas. I&apos;m
+              excited to share my thoughts and connect with others who share
+              similar interests.
             </span>
           </p>
         </div>
