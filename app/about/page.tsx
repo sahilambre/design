@@ -36,7 +36,7 @@ const AboutPage = () => {
         >
           <h1 className="text-4xl font-bold text-black dark:text-white leading-snug">
             Full Stack Developer, <br /> Graduated <br /> in Computer Science,{" "}
-            <br /> Lorem, ipsum dolor..
+            <br /> Part-time Guitarist.
           </h1>
           <p className="text-lg text-black dark:text-white mt-6">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
@@ -99,18 +99,24 @@ const AboutPage = () => {
           </h2>
           <ul className="text-black dark:text-white space-y-4">
             <li>
-              <strong>Company</strong> · 20xx - 20xx · (Remote) <br />
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-              nam sed itaque laborum qui ab eaque dicta cum culpa corporis.
+              <strong>
+                The Yiddish Arts and Academics Association of North America{" "}
+              </strong>{" "}
+              ·
+              <br />
+              <em>Aug 2024 - Present</em> <br />
+              Full Stack Developer
             </li>
             <li>
-              <strong>Company</strong> · 20xx
+              <strong>Vighnahara Engineering Solutions</strong> ·
+              <em>August 2021 - July 2022</em> <br />
+              Full Stack Developer
             </li>
             <li>
-              <strong>Company</strong> · Intern · 20xx <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Repellendus nulla dolore laborum totam! Enim nulla quaerat facere
-              et cumque odit.
+              <strong>Dezignolics Web and Software Solutions </strong> · <br />{" "}
+              <em>Dec 2020 - July 2021</em>
+              <br />
+              Software Engineering Intern
             </li>
           </ul>
           <h2 className="text-2xl font-bold text-black dark:text-white mt-4">
@@ -152,14 +158,14 @@ const AboutPage = () => {
           <ul className="text-black dark:text-white space-y-4">
             <li>
               <strong>Stevens Institute of Technology</strong> <br />
-              20XX - 20XX <br />
-              Degree Name
+              2022 - 2024 <br />
+              Master&apos;s in Computer Science
             </li>
             <li>
               <strong>Mumbai University</strong> <br />
               2018 - 2022
               <br />
-              Degree Name
+              Bachelor&apos;s in Computer Engineering
             </li>
           </ul>
           <div className="mt-6">
