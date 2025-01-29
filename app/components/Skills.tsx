@@ -1,6 +1,6 @@
 import React from "react";
 import { IconCloud } from "./ui/IconCloud";
-import { ShimmerButton } from "./ui/ShimmerButton";
+import { RainbowButton } from "./RainbowButton";
 
 const slugs = [
   // "visualstudiocode", todo
@@ -40,7 +40,7 @@ const Skills = () => {
       <div className="container flex flex-col py-4 md:py-16 md:flex-row mx-auto px-4 md:px-16 lg:px-24 xl:px-80 gap-8 ">
         <div className="w-full md:w-1/2">
           {/* Skillset animation cloud Component */}
-          <div className="relative flex size-full max-w-lg items-between justify-center overflow-hidden rounded-lg border bg-white">
+          <div className="relative flex size-full max-w-lg items-between justify-center overflow-hidden rounded-lg border bg-gray-800 dark:bg-white">
             <IconCloud images={images} />
           </div>
         </div>
@@ -48,36 +48,30 @@ const Skills = () => {
           <h2 className="text-4xl">i am skilled in.</h2>
           <br />
           <div className="flex flex-wrap justify-center gap-2">
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Frontend
-              </span>
-            </ShimmerButton>
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Backend
-              </span>
-            </ShimmerButton>
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Testing
-              </span>
-            </ShimmerButton>
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Collaboration
-              </span>
-            </ShimmerButton>
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Wireframing
-              </span>
-            </ShimmerButton>
-            <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                Prototyping
-              </span>
-            </ShimmerButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Frontend Developement
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Backend Developement
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Testing
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Collaboration
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Wireframing
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Prototyping
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              CI/ CD Pipelines
+            </RainbowButton>
+            <RainbowButton className="shadow-2xl bg-black text-white dark:bg-white dark:text-black">
+              Debugging
+            </RainbowButton>
           </div>
         </div>
       </div>
