@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {/* Right Section */}
         <li className="flex space-x-6">
-          {["About", "Resume", "Fun"].map((text) => (
+          {["About"].map((text) => (
             <ul className="font-[poppins]" key={text}>
               <div className="relative overflow-hidden group">
                 <span className="invisible">{text}</span>

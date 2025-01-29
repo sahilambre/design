@@ -1,7 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import aboutImage from "@/public/iwritecode.webp";
 import { FaGithub } from "react-icons/fa";
+import writeit from "@/public/Writeit.png";
+import jobSpotlight from "@/public/jobspotlight.png";
+import eg from "@/public/eg.png";
+import aiAgent from "@/public/aiagent.png";
 
 const ProjectSection = () => {
   return (
@@ -10,7 +13,7 @@ const ProjectSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
             <Image
-              src={aboutImage}
+              src={aiAgent}
               alt="AI Agent"
               width={400}
               height={300}
@@ -25,10 +28,10 @@ const ProjectSection = () => {
             </p>
             <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
               <a
-                href="https://github.com/yourusername/job-seeking-platform"
+                href="https://github.com/sahilambre/ai-agent"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className=""
               >
                 View on <FaGithub className="inline text-2xl pb-1" />
               </a>
@@ -37,7 +40,7 @@ const ProjectSection = () => {
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
             <Image
-              src={aboutImage}
+              src={eg}
               alt="Elderly gaming platform"
               width={400}
               height={300}
@@ -53,10 +56,10 @@ const ProjectSection = () => {
             </p>
             <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
               <a
-                href="https://github.com/yourusername/job-seeking-platform"
+                href="https://github.com/sahilambre/CS555-FinalProject"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className=""
               >
                 View on <FaGithub className="inline text-2xl pb-1" />
               </a>
@@ -65,7 +68,7 @@ const ProjectSection = () => {
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
             <Image
-              src={aboutImage}
+              src={writeit}
               alt="Full Stack Blogging Web Application"
               width={400}
               height={300}
@@ -82,10 +85,10 @@ const ProjectSection = () => {
             </p>
             <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
               <a
-                href="https://github.com/yourusername/job-seeking-platform"
+                href="https://github.com/sahilambre/Blog-App"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className=""
               >
                 View on <FaGithub className="inline text-2xl pb-1" />
               </a>
@@ -94,7 +97,7 @@ const ProjectSection = () => {
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
             <Image
-              src={aboutImage}
+              src={jobSpotlight}
               alt="Job Seeking Platform"
               width={400}
               height={300}
@@ -108,10 +111,10 @@ const ProjectSection = () => {
             </p>
             <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
               <a
-                href="https://github.com/yourusername/job-seeking-platform"
+                href="https://github.com/sahilambre/CS546-Group-26-Final-Project"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className=""
               >
                 View on <FaGithub className="inline text-2xl pb-1" />
               </a>
