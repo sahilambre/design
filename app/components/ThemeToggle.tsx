@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 import React from "react";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
