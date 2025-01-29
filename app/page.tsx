@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import { VelocityScroll } from "./components/ui/VelocityScroll";
 import ProjectSection from "./components/ProjectSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         Featured Projects.
       </VelocityScroll>
       <ProjectSection />
+      <Footer />
     </>
   );
 }

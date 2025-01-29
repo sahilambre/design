@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import aboutImage from "@/public/iwritecode.webp";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectSection = () => {
   return (
@@ -22,14 +23,16 @@ const ProjectSection = () => {
               Next.js architecture with modular components and optimized API
               interactions.
             </p>
-            <a
-              href="https://github.com/yourusername/ai-agent"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              View on GitHub
-            </a>
+            <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
+              <a
+                href="https://github.com/yourusername/job-seeking-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                View on <FaGithub className="inline text-2xl pb-1" />
+              </a>
+            </button>
           </div>
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
@@ -48,14 +51,16 @@ const ProjectSection = () => {
               system to boost medication adherence. Enhanced reliability with
               Jest testing and integrated Redux for efficient state management.
             </p>
-            <a
-              href="https://github.com/yourusername/elderly-gaming-platform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              View on GitHub
-            </a>
+            <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
+              <a
+                href="https://github.com/yourusername/job-seeking-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                View on <FaGithub className="inline text-2xl pb-1" />
+              </a>
+            </button>
           </div>
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
@@ -75,14 +80,16 @@ const ProjectSection = () => {
               Implemented JWT authentication for secure user access and improved
               overall UX.
             </p>
-            <a
-              href="https://github.com/yourusername/full-stack-blogging"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              View on GitHub
-            </a>
+            <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
+              <a
+                href="https://github.com/yourusername/job-seeking-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                View on <FaGithub className="inline text-2xl pb-1" />
+              </a>
+            </button>
           </div>
 
           <div className="p-4 border rounded-lg shadow-md bg-black text-white dark:bg-white dark:text-black">
@@ -99,14 +106,16 @@ const ProjectSection = () => {
               uploads using multer. Designed personalized dashboards with
               dynamic rendering to enhance user engagement.
             </p>
-            <a
-              href="https://github.com/yourusername/job-seeking-platform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              View on GitHub
-            </a>
+            <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
+              <a
+                href="https://github.com/yourusername/job-seeking-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                View on <FaGithub className="inline text-2xl pb-1" />
+              </a>
+            </button>
           </div>
         </div>
       </div>
