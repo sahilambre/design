@@ -19,7 +19,9 @@ const ProjectSection = () => {
               height={300}
               className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">AI Agent.</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              AI Agent. <span className="text-red-400">Ongoing</span>
+            </h3>
             <p className="text-white dark:text-black mb-4 ">
               Developed an AI-powered app using LangChain, LangGraph, and Convex
               DB for dynamic data handling and NLP integration. Built a scalable
