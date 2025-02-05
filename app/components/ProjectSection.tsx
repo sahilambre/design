@@ -30,7 +30,7 @@ const ProjectSection = () => {
             </p>
             <button className="bg-white text-black dark:bg-black dark:text-white p-2 rounded-md">
               <a
-                href="https://github.com/sahilambre/ai-agent"
+                href="https://github.com/sahilambre/langchain-ai-agent"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
